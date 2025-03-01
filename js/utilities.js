@@ -83,6 +83,12 @@ function updateDateTime() {
 }
 updateDateTime();
 
+// Function to delete all created divs inside #task-section
+function clearTaskLogs() {
+    document.getElementById("task-section").innerHTML = ""; // Removes all added logs
+}
 
+// Attach event listener to the delete button
+document.getElementById("clear-btn").addEventListener("click", clearTaskLogs);
 
 
