@@ -27,7 +27,7 @@ function countingTask(event){
         let newdiv = document.createElement("div");
 
         newdiv.innerHTML = `
-            <div class="text-[10px] bg-[#F4F7FF] p-2 rounded-lg my-2">
+            <div class="text-[12px] bg-[#F4F7FF] p-2 rounded-lg my-2">
             You have completed the task: <strong>${headlineText}</strong> at ${new Date().toLocaleString()}
         </div>
         `;
