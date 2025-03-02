@@ -20,13 +20,15 @@ function countingTask(event){
         }
 
         //Activity-Log section
+        let card = event.target.closest(".card");
+        let headlineText = card.querySelector(".card-title").innerText;
 
-        
+
         let newdiv = document.createElement("div");
 
         newdiv.innerHTML = `
             <div class="text-[10px] bg-[#F4F7FF] p-2 rounded-lg my-2">
-            You have completed the task ${new Date().toLocaleString()}
+            You have completed the task: <strong>${headlineText}</strong> at ${new Date().toLocaleString()}
         </div>
         `;
 
