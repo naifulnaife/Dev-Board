@@ -1,9 +1,9 @@
 //couting task
+
+document.getElementById("bg-changer").style.cursor = "pointer";
+
 function countingTask(event){
         
-        
-        
-    
         let taskNumber = document.getElementById("task-num");
         let taskCount = document.getElementById("task-count");
         let convertedNumber = parseInt(taskNumber.innerText);
